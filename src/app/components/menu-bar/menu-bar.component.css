@@ -1,9 +1,22 @@
 .container__menu-bar > ul {
   display: flex;
   flex-direction: row;
+  padding: 0; /* Remova o preenchimento padrão da lista */
+  list-style: none; /* Remova os marcadores da lista */
 }
 
 .container__menu-bar > ul > li {
-  margin-right: 20px;
-  list-style: none;
+  margin-right: 1.25rem; /* Adicione uma margem direita para separar os itens na lista */
+}
+
+/* Adicione uma regra de media query para telas menores, por exemplo, abaixo de 768px */
+@media screen and (max-width: 768px) {
+  .container__menu-bar > ul {
+    flex-direction: row; /* Mude para uma coluna em telas menores */
+  }
+
+  .container__menu-bar > ul > li {
+    margin-right: 0; /* Remova a margem direita em telas menores para empilhar os itens */
+    margin-bottom: 0.5rem; /* Adicione uma margem inferior para separar os itens na coluna */
+  }
 }

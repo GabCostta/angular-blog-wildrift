@@ -1,8 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/* Definições globais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
+}
+
+body {
   background-color: #111111;
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -10,6 +14,21 @@
 
 a {
   text-decoration: none;
+  color:whitesmoke;
+}
+
+.articles__others h1 > a {
+  font-size: large;
+  font-size: 19px;
+  line-height: 1.5;
+
+}
+
+p {
+  max-width: 100%; /* Utilize toda a largura disponível */
+  padding: 1rem; /* Adicione um espaçamento interno */
+  text-align: center;
+  color: lavender;
 }
 
 hr {
@@ -17,4 +36,22 @@ hr {
   border-top: 1px solid blue; /* Altere a cor da linha, se desejar */
   margin: 0;
   padding: 0;
+}
+
+
+/* Adicione uma regra de media query para diminuir o tamanho da fonte em telas menores */
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 14px; /* Reduza o tamanho da fonte em telas menores (altere conforme necessário) */
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container__small-card {
+      max-width: 100%; /* Permita que o contêiner se ajuste ao tamanho da tela em telas maiores */
+    }
+  
+    .container__small-card-content {
+      flex-direction: row; /* Mantenha o layout em linha em telas maiores */
+    }
+  }
 }

@@ -1,33 +1,73 @@
 .container__big-card {
   color: white;
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 400px;
-  height: 500px;
-
+  margin-left: 2rem; /* Alterado para unidades relativas */
+  margin-right: 2rem; /* Alterado para unidades relativas */
+  max-width: 100%; /* Permitir que o contêiner se ajuste ao tamanho da tela */
+  height: auto; /* Removido a altura fixa */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
 }
 
 .big-card__title > h1 {
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 1.25rem; /* Alterado para uma unidade relativa */
+  margin-top: 1.5rem; /* Alterado para uma unidade relativa */
+  text-align: center;
 }
 
 .big-card__photo > img {
   width: 100%;
-  min-width: 400px;
+  max-width: 35rem; /* Alterado para unidades relativas */
 }
 
 .big-card__description {
-  margin-top: 20px;
+  margin-top: 2rem; /* Alterado para uma unidade relativa */
 }
 
 .big-card__description > p > a {
   color: grey;
 }
+
 .big-card__description > p {
   color: grey;
+}
+
+/* Adicione uma regra de media query para telas menores, por exemplo, abaixo de 768px */
+@media screen and (max-width: 768px) {
+  .container__big-card {
+    margin: 1rem; /* Reduza as margens em telas menores */
+  }
+
+  .big-card__title > h1 {
+    font-size: 1rem; /* Reduza o tamanho da fonte em telas menores */
+    margin-top: 1rem; /* Reduza a margem superior em telas menores */
+  }
+
+  .big-card__photo > img {
+    max-width: 100%; /* Permita que a imagem ocupe toda a largura em telas menores */
+  }
+
+  .big-card__description {
+    margin-top: 1rem; /* Reduza a margem superior em telas menores */
+  }
+
+  @media screen and (max-width: 1200px) {
+    .container__big-card {
+      margin: 1rem; /* Reduza as margens em telas menores */
+    }
+  
+    .big-card__title > h1 {
+      font-size: 1rem; /* Reduza o tamanho da fonte em telas menores */
+      margin-top: 1rem; /* Reduza a margem superior em telas menores */
+    }
+  
+    .big-card__photo > img {
+      max-width: 100%; /* Permita que a imagem ocupe toda a largura em telas menores */
+    }
+  
+    .big-card__description {
+      margin-top: 1rem; /* Reduza a margem superior em telas menores */
+    }
+  }
 }

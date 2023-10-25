@@ -42,8 +42,8 @@ export const dataFake = [
     "description": "Vamos comemorar a Atualização 4.4: Pico de Poder 2023! David e John estão celebrando três novos Campeões, reworks grandiosos, Passes Wild misteriosos e um modo de jogo inédito! Preparem os chapéus de festa para o dia 25 de outubro!"
   },
   {
-    "id": "5",
-    "photo": "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt60535337dbdbdea1/64c3562f0242c3576bbb7f3c/80223_WR_News_Website_Article_Banner.jpg",
+    "id": "8",
+    "photo": "https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt6ff1e767ac22533a/64c849a03325591973191bb6/080223_Vladimir_Splash.jpg",
     "title": "Notas da Atualização 4.3a do Wild Rift",
     "description": "VLADIMIR, O SANGUINÁRIO ESCARLATE - Um demônio sedento pelo sangue dos mortais, Vladimir tem influenciado os acontecimentos de Noxus desde os primórdios do império. Além de ter estendido sua vida por meios não naturais, sua maestria em hemomancia o permite controlar as mentes e os corpos de outras pessoas como se fossem parte de si. Nos exuberantes salões da aristocracia noxiana, isso possibilitou formar um culto fanático de personalidades ao seu redor, tudo isso para que ele possa fazer seus inimigos sangrarem nos becos escuros. Vladimir será lançado em 16 de agosto às 21:01 BRT."
   },

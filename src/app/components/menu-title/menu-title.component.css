@@ -1,11 +1,12 @@
 .container__menu-title {
   color: white;
+  text-align: center; /* Alinhe o texto ao centro para telas menores */
 }
 
 .container__menu-title > h1 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 135px;
+  margin-top: 1.5rem; /* Alterado para uma unidade relativa */
+  margin-bottom: 1.5rem; /* Alterado para uma unidade relativa */
+  font-size: 4rem; /* Alterado para uma unidade relativa */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   display: flex;
@@ -13,6 +14,17 @@
 }
 
 .container__menu-title > hr {
-  margin-top: 20px;
-  margin-bottom: 5px;
+  margin-top: 2rem; /* Alterado para uma unidade relativa */
+  margin-bottom: 0.5rem; /* Alterado para uma unidade relativa */
+}
+
+/* Media query para telas menores, por exemplo, abaixo de 768px */
+@media screen and (max-width: 768px) {
+  .container__menu-title > h1 {
+    font-size: 2.5rem; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  .container__menu-title > hr {
+    margin-top: 1.5rem; /* Ajuste a margem superior do HR para telas menores */
+  }
 }
