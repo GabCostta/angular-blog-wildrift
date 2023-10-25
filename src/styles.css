@@ -40,7 +40,7 @@ p {
 
 hr {
   border: none;
-  border-top: 1px;
+  border-top: 2px solid blue; /* Altere a cor da linha, se desejar */
   margin: 0;
   padding: 0;
 }
