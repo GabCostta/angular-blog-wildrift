@@ -14,6 +14,8 @@
   font-size: 1.25rem; /* Alterado para uma unidade relativa */
   margin-top: 1.5rem; /* Alterado para uma unidade relativa */
   text-align: center;
+  text-decoration: underline;
+  color: whitesmoke;
 }
 
 .big-card__photo > img {

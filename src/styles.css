@@ -17,13 +17,19 @@ a {
   color:whitesmoke;
 }
 
-
 .articles__others h1 > a {
-  font-size: large;
   font-size: 19px;
   line-height: 1.5;
-
+  margin-top: 22px;
+  text-decoration: underline;
+  color: whitesmoke;
 }
+
+/* Altere a cor do link quando o mouse estiver sobre ele (efeito hover) */
+.articles__others h1 > a:hover {
+  color: #0056b3; /* Escolha uma cor diferente para o hover */
+}
+
 
 p {
   max-width: 100%; /* Utilize toda a largura disponível */
@@ -34,7 +40,7 @@ p {
 
 hr {
   border: none;
-  border-top: 1px solid blue; /* Altere a cor da linha, se desejar */
+  border-top: 1px;
   margin: 0;
   padding: 0;
 }
@@ -52,6 +58,8 @@ footer {
 @media screen and (max-width: 768px) {
   p {
     font-size: 14px; /* Reduza o tamanho da fonte em telas menores (altere conforme necessário) */
+    padding: 0px;
+    font-size: 20px;
   }
 
   @media screen and (min-width: 1200px) {
