@@ -17,6 +17,7 @@ a {
   color:whitesmoke;
 }
 
+
 .articles__others h1 > a {
   font-size: large;
   font-size: 19px;
@@ -37,6 +38,14 @@ hr {
   margin: 0;
   padding: 0;
 }
+
+footer {
+  background-color: slategray;
+    color: white;
+    padding: 0rem;
+    text-align: center;
+}
+
 
 
 /* Adicione uma regra de media query para diminuir o tamanho da fonte em telas menores */

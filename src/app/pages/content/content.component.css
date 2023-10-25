@@ -70,11 +70,4 @@
     margin: 0 auto;
   }
 
-  .content__photo > img {
-    /* Faça os ajustes necessários para as imagens nessa faixa de tamanho */
-  }
-  
-  .content__title, .content__description, .content__btn-home {
-    /* Faça os ajustes necessários para o título, descrição e botão nessa faixa de tamanho */
-  }
 }
