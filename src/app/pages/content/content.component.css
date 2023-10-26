@@ -1,18 +1,18 @@
 /* Regras de estilo padrão para telas menores ou iguais a 768px */
 .container__content {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem;
+  height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .content__photo > img {
   border: solid 2px #616161;
   height: auto;
-  width: 85%;
-  border-radius: 15px;
+  width: 64%;
+  border-radius: 30px;
 }
 
 .content__title {
@@ -48,6 +48,8 @@
   color: white;
 }
 
+.content_footer {}
+
 /* Regra de media query para telas entre 769px e 1200px */
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .container__content {
@@ -66,8 +68,8 @@
 /* Regra de media query para telas maiores do que 1200px */
 @media screen and (min-width: 1201px) {
   .container__content {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1063px;
+    margin: 14px auto;
   }
 
 }
