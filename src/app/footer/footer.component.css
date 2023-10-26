@@ -1,6 +1,24 @@
 footer {
-    background-color: slategray;
-      color: white;
-      padding: 0rem;
-      text-align: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1px;
+  height: 30px; /* Defina a altura desejada para o footer */
+  z-index: 2; /* Adicione um índice z para que o footer fique acima do conteúdo */
+}
+
+footer > p {
+  padding: 1px;
+  font-size: 14px;
+}
+
+/* Media query para telas de dispositivos móveis com largura máxima de 768px */
+@media (max-width: 768px) {
+  footer > p {
+    font-size: 10px; /* Ajuste o tamanho da fonte para dispositivos móveis */
   }
+}

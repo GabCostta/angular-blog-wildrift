@@ -17,5 +17,6 @@ header {
   header {
     flex-direction: column; /* Mude para uma coluna em telas menores */
     align-items: center; /* Centralize o conteúdo na coluna */
+    font-size: 14px;
   }
 }
