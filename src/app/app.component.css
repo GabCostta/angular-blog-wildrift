@@ -1,5 +1,5 @@
 header {
-  margin-top: 1.25rem; /* Alterado para uma unidade relativa */
+  margin-top: -3rem; /* Alterado para uma unidade relativa */
   display: flex;
   flex-direction: row;
   justify-content: center;

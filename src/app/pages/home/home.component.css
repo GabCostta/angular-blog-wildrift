@@ -26,7 +26,7 @@
   .container__articles {
     /* Adicione seus estilos para telas maiores aqui */
     /* Por exemplo, você pode aumentar a margem superior ou fazer outras modificações */
-    margin-top: 3rem;
+    margin-top: -3rem;
     /* Adicione outros estilos para telas maiores conforme necessário */
   }
 }
