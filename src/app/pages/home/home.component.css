@@ -1,32 +1,31 @@
 .container__articles {
-  margin-top: 1.875rem; /* Alterado para uma unidade relativa */
+  margin-top: 1.875rem; /* Unidade relativa */
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0 6px; /* Combina margem direita e esquerda */
+}
+
+.container__articles_others {
+  /* Ajuste de margem em telas menores */
   margin-right: 6px;
   margin-left: 6px;
 }
 
-.container__articles_others{
-  /* Adicione uma regra de media query para ajustar a margem em telas menores */
-  @media screen and (max-width: 768px) {
-    margin-right: 3px; /* Reduza a margem para 3px em telas menores */
-  }
-
-}
-/* Adicione uma regra de media query para telas menores, por exemplo, abaixo de 768px */
 @media screen and (max-width: 768px) {
   .container__articles {
-    flex-direction: column; /* Mude para uma coluna em telas menores */
-    align-items: center; /* Centralize o conteúdo na coluna */
+    flex-direction: column; /* Muda para coluna em telas menores */
+    align-items: center; /* Centraliza o conteúdo na coluna */
+    margin: 0 3px; /* Reduz a margem para 3px em telas menores */
+  }
+
+  .container__articles_others {
+    margin: 0 3px; /* Reduz a margem para 3px em telas menores */
   }
 }
-/* Estilos para telas maiores (acima de 768px) */
+
 @media screen and (min-width: 769px) {
   .container__articles {
-    /* Adicione seus estilos para telas maiores aqui */
-    /* Por exemplo, você pode aumentar a margem superior ou fazer outras modificações */
-    margin-top: -3rem;
-    /* Adicione outros estilos para telas maiores conforme necessário */
+    margin-top: -3rem; /* Ajuste de margem superior para telas maiores */
   }
 }

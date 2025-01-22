@@ -1,17 +1,18 @@
-/* Regras de estilo padrão para telas menores ou iguais a 768px */
+/* Base styles */
 .container__content {
-  padding-bottom: 30px; /* Adicione um preenchimento inferior igual à altura do footer */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem;
+    padding-bottom: 2rem; /* Use relative units */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .content__photo > img {
     border: solid 2px #616161;
     height: auto;
-    width: 64%;
+    width: 100%;
+    max-width: 64%;
     border-radius: 30px;
 }
 
@@ -19,6 +20,7 @@
     margin-top: 2rem;
     max-width: 700px;
     text-align: center;
+    font-size: 1.5rem; /* Use relative units */
 }
 
 .content__description {
@@ -39,7 +41,7 @@
 
 .content__btn-home > a {
     background-color: #616161;
-    padding: 0.2rem 2rem;
+    padding: 0.5rem 2rem; /* Use relative units */
     border-radius: 15px;
 }
 
@@ -48,30 +50,47 @@
     color: white;
 }
 
-/* Regra de media query para telas entre 769px e 1200px */
+/* Media query for screens between 769px and 1200px */
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .container__content {
-        margin: 1rem; /* Ajuste a margem para telas nessa faixa de tamanho */
+        margin: 1rem;
     }
 
     .content__photo > img {
-        max-width: 90%; /* Reduza um pouco a largura máxima da imagem para telas nessa faixa de tamanho */
+        max-width: 90%;
     }
 
     .content__title, .content__description, .content__btn-home {
-        max-width: 80%; /* Reduza um pouco a largura máxima desses elementos */
+        max-width: 80%;
     }
 }
-/* Media query para telas de dispositivos móveis com largura máxima de 768px */
+
+/* Media query for mobile devices with a maximum width of 768px */
 @media (max-width: 768px) {
-  .content__title {
-      margin-top: 1rem; /* Ajuste a margem superior para telas móveis */
-      max-width: 90%; /* Reduza a largura máxima para telas móveis */
-      font-size: 18px; /* Ajuste o tamanho da fonte para telas móveis */
-  }
+    .container__content {
+        padding: 1rem;
+    }
+
+    .content__title {
+        margin-top: 1rem;
+        max-width: 90%;
+        font-size: 1.2rem; /* Adjust font size for mobile */
+    }
+
+    .content__description {
+        max-width: 90%;
+    }
+
+    .content__btn-home {
+        margin-top: 2rem;
+    }
+
+    .content__btn-home > a {
+        padding: 0.5rem 1.5rem; /* Adjust padding for mobile */
+    }
 }
 
-/* Regra de media query para telas maiores do que 1200px */
+/* Media query for screens larger than 1200px */
 @media screen and (min-width: 1201px) {
     .container__content {
         max-width: 1063px;
